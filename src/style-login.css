@@ -20,10 +20,11 @@ body {
     background-color: #054096;
     border-radius: 30px;
     box-shadow: 8px 7px 30px rgb(0, 28, 141);
+    position: relative;
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 550px;
 }
 
 .container p {
@@ -41,17 +42,27 @@ body {
 }
 
 .container form {
-    background-color: #fff;
+    background-color: transparent;
+    border: 1px solid #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
+    padding: 20px 50px;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .form-container {
-    position: absolute;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 200px;
+    padding-right: 500px;
+    padding-left: 100px;
+    align-items: center;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
@@ -73,6 +84,7 @@ body {
 }
 
 .social-icons a {
+    background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
