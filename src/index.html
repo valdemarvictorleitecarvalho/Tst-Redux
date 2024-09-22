@@ -2,43 +2,95 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Character definition to UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Responsiveness: scales the page to display correctly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Imports the Font Awesome icon library (version 6.6.0) to use as icons in the layout -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Link login style file to login page -->
     <link rel="stylesheet" href="style-login.css">
+
+    <!-- Defines the page icon that will appears in the browser tab (favicon) -->
     <link rel="shortcut icon" href="images/logo-uasc-render.ico" type="image/x-icon">
+
+    <!-- Login page title in the browser tab -->
     <title>Login | TST Redux</title>
 </head>
 
 <body>
-    <div class="login-main">
-        <div class="container" id="container">
-            <div class="form-container sign-up">
-                <form>
-                    <div class="login-icons">
-                        <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-                    </div>
-                </form>
-            </div>
+    <!-- Main container that has the page content -->
+    <div class="container" id="container">
 
-            <div class="toggle-container">
-                <div class="toggle">
-                    <div class="toggle-square toggle-right">
-                        <h1>Bem-vindo!</h1>
-                        <p>
-                            Faça login com seu e-mail acadêmico (@ccc.ufcg.edu.br) para ter acesso ao TST. Divirta-se!
-                        </p>
-                    </div>
-    
-                    <div class="toggle-square toggle-left"></div>
-                        <h1>TST Redux</h1>
-                        <img src="images/logo-uasc.png" alt="Logo CC" width="200" height="200">
-                    </div>
+        <!-- First form: sign-in area to professors -->
+        <div class="form-container sign-up">
+            <form>
+                <!-- First form header -->
+                <h1>Área Restrita</h1>
+
+                <!-- First form description and information -->
+                <span>Utilize o Token correspondente à turma</span>
+
+                <!-- Input field for email -->
+                <input type="email" placeholder="Email">
+
+                <!-- Input field for password -->
+                <input type="password" placeholder="Senha">
+
+                <!-- Input field for class token -->
+                <input type="text" placeholder="Token">
+
+                <!-- Button to start login -->
+                <button>Iniciar</button>
+            </form>
+        </div>
+
+        <!-- Second form: student's login area with Google -->
+        <div class="form-container sign-in">
+            <form>
+                <!-- Second form header -->
+                <h1>TST Redux</h1>
+                
+                <!-- Link to login via Google using Font Awesome icon -->
+                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+            </form>
+        </div>
+
+        <!-- Panel switching container -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <!-- Left pane (information about system) -->
+                <div class="toggle-panel toggle-left">
+                    <!-- Information about what the website is -->
+                    <h1>CCC Online Judge</h1>
+
+                    <!-- Information about the website creator -->
+                    <p>Desenvolvido por Valdemar Carvalho</p>
+
+                    <!-- UASC logo -->
+                    <img src="images/logo-uasc.png" alt="Logo CC" width="200" height="200">
+                </div>
+                
+                <!-- Right panel (welcome message) -->
+                <div class="toggle-panel toggle-right">
+                    <!-- Welcome message-->
+                    <h1>Bem-vindo!</h1>
+
+                    <!-- Instruction to login properly -->
+                    <p>Faça login com seu e-mail acadêmico (@ccc.ufcg.edu.br) para ter acesso ao TST. Divirta-se!</p>
+                    
+                    <!-- Visual only button -->
+                    <button class="hidden" id="register">Ver mais</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Imports the JavaScript file for page interactivity -->
     <script src="script-login.js"></script>
 </body>
+
 </html>
