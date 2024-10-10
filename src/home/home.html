@@ -21,7 +21,6 @@
             <img class="logo" src="../assets/images/logo-uasc-render.ico" alt="logo">
             <span class="logo-text">TST Redux</span>
         </div>
-        
         <nav>
             <ul class="links_nav">
                 <li><a href="#">Instruções</a></li>
@@ -32,5 +31,47 @@
             </ul>
         </nav>
     </header>
+
+    <div class="main-content">
+        <div class="content-container">
+            <div class="filter-section">
+                <input type="text" id="searchInput" placeholder="Pesquisar questões..." onkeyup="filterQuestions()">
+                <select id="tagFilter" onchange="filterQuestions()">
+                    <option value="">Todas as tags</option>
+                    <option value="algoritmoselementares">Algoritmos Elementares</option>
+                    <option value="arrays">Arrays</option>
+                    <option value="strings">Strings</option>
+                    <option value="linkedlist">Linked List</option>
+                    <option value="tree">Tree</option>
+                </select>
+            </div>
+
+            <section class="questions-list">
+                <ul id="questionList">
+                    <li data-tags="algoritmoselementares">
+                        <div class="question-title">
+                            <a href="../login/index.html">Warm up</a>
+                        </div>
+                        <div class="question-tags">Tag: Algoritmos Elementares</div>
+                    </li>
+                    <li data-tags="strings">
+                        <div class="question-title">Questão 2</div>
+                        <div class="question-tags">Tag: Strings</div>
+                    </li>
+                    <li data-tags="tree">
+                        <div class="question-title">Questão 3</div>
+                        <div class="question-tags">Tag: Tree</div>
+                    </li>
+                    <li data-tags="linkedlist">
+                        <div class="question-title">Questão 4</div>
+                        <div class="question-tags">Tag: Linked List</div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="script-home.js"></script>
 </body>
+
 </html>
