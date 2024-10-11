@@ -27,7 +27,7 @@
                 <li><a href="#">Ranking</a></li>
                 <li><a href="#">Fórum</a></li>
                 <li><a href="#">Perfil</a></li>
-                <li><a href="#">Sair</a></li>
+                <li><a href="../login/index.html">Sair</a></li>
             </ul>
         </nav>
     </header>
@@ -35,36 +35,48 @@
     <div class="main-content">
         <div class="content-container">
             <div class="filter-section">
-                <input type="text" id="searchInput" placeholder="Pesquisar questões..." onkeyup="filterQuestions()">
+                <input type="text" id="searchInput" placeholder="Pesquisar questões" onkeyup="filterQuestions()">
                 <select id="tagFilter" onchange="filterQuestions()">
-                    <option value="">Todas as tags</option>
+                    <option value="">Tags</option>
                     <option value="algoritmoselementares">Algoritmos Elementares</option>
                     <option value="arrays">Arrays</option>
                     <option value="strings">Strings</option>
                     <option value="linkedlist">Linked List</option>
                     <option value="tree">Tree</option>
                 </select>
+
+                <select id="difficultyFilter" onchange="filterQuestions()">
+                    <option value="">Dificuldade</option>
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Médio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
             </div>
 
             <section class="questions-list">
                 <ul id="questionList">
-                    <li data-tags="algoritmoselementares">
+                    <li data-tags="algoritmoselementares" data-difficulty="facil">
                         <div class="question-title">
                             <a href="../login/index.html">Warm up</a>
                         </div>
-                        <div class="question-tags">Tag: Algoritmos Elementares</div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares</div>
                     </li>
-                    <li data-tags="strings">
+                    <li data-tags="strings" data-difficulty="dificil">
                         <div class="question-title">Questão 2</div>
-                        <div class="question-tags">Tag: Strings</div>
+                        <div class="question-tags">Tags: Strings</div>
                     </li>
-                    <li data-tags="tree">
+                    <li data-tags="tree" data-difficulty="facil">
                         <div class="question-title">Questão 3</div>
-                        <div class="question-tags">Tag: Tree</div>
+                        <div class="question-tags">Tags: Tree</div>
                     </li>
-                    <li data-tags="linkedlist">
+                    <li data-tags="linkedlist" data-difficulty="facil">
                         <div class="question-title">Questão 4</div>
-                        <div class="question-tags">Tag: Linked List</div>
+                        <div class="question-tags">Tags: Linked List</div>
                     </li>
                 </ul>
             </section>
