@@ -7,13 +7,12 @@ function filterQuestions() {
     questions.forEach((question) => {
         const title = question.querySelector('.question-title').textContent.toLowerCase();
         const tags = question.getAttribute('data-tags');
-        const difficulty = question.getAttribute('data-difficulty'); // Extrai a dificuldade
+        const difficulty = question.getAttribute('data-difficulty'); 
 
         const matchesSearch = title.includes(searchInput);
         const matchesTag = tagFilter === "" || tags.includes(tagFilter);
         const matchesDifficulty = difficultyFilter === "" || (difficulty && difficulty === difficultyFilter);
 
-        // Exibe a questão se todas as condições forem atendidas
         if (matchesSearch && matchesTag && matchesDifficulty) {
             question.style.display = "";
         } else {
