@@ -21,6 +21,7 @@
             <img class="logo" src="../assets/images/logo-uasc-render.ico" alt="logo">
             <span class="logo-text">TST Redux</span>
         </div>
+        
         <nav>
             <ul class="links_nav">
                 <li><a href="#">Instruções</a></li>
@@ -35,15 +36,41 @@
     <div class="main-content">
         <div class="content-container">
             <div class="filter-section">
+                
                 <input type="text" id="searchInput" placeholder="Pesquisar questões" onkeyup="filterQuestions()">
+                
                 <select id="tagFilter" onchange="filterQuestions()">
                     <option value="">Tags</option>
                     <option value="algoritmoselementares">Algoritmos Elementares</option>
+                    <option value="teoria">Teoria</option>
                     <option value="arrays">Arrays</option>
+                    <option value="desafios">Desafios</option>
+                    <option value="entrevista">Entrevista</option>
+                    <option value="busca">Busca</option>
+                    <option value="recursividade">Recursividade</option>
+                    <option value="ordenacao">Ordenação</option>
+                    <option value="pivot">Pivot</option>
+                    <option value="particionamento">Particionamento</option>
+                    <option value="lomuto">Lomuto</option>
+                    <option value="linear">Linear</option>
+                    <option value="pilha">Pilha</option>
+                    <option value="fila">Fila</option>
+                    <option value="linkedlist">LinkedList</option>
+                    <option value="hash">Hash</option>
+                    <option value="arvbin">Árvores Binárias</option>
+                    <option value="bst">BST</option>
+                    <option value="arvores">Árvores</option>
+                    <option value="grafos">Grafos</option>
+                    <option value="preordem">Pré-Ordem</option>
+                    <option value="emordem">Em-Ordem</option>
+                    <option value="posordem">Pós-Ordem</option>
+                    <option value="bfs">BFS</option>
+                    <option value="dfs">DFS</option>
+                    <option value="largura">Encaminhamento em Largura</option>
+                    <option value="heap">Heap</option>
+                    <option value="avl">AVL</option>
                     <option value="strings">Strings</option>
-                    <option value="linkedlist">Linked List</option>
-                    <option value="tree">Tree</option>
-                </select>
+                </select>   
 
                 <select id="difficultyFilter" onchange="filterQuestions()">
                     <option value="">Dificuldade</option>
@@ -57,7 +84,7 @@
                 <ul id="questionList">
                     <li data-tags="algoritmoselementares" data-difficulty="facil">
                         <div class="question-title">
-                            <a href="../login/index.html">Warm up</a>
+                            <a href="../login/index.html">Warm Up</a>
                         </div>
                         <div class="question-info">
                             <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
@@ -66,17 +93,1181 @@
                         </div>
                         <div class="question-tags">Tags: Algoritmos Elementares</div>
                     </li>
-                    <li data-tags="strings" data-difficulty="dificil">
-                        <div class="question-title">Questão 2</div>
-                        <div class="question-tags">Tags: Strings</div>
+                    
+                    <li data-tags="algoritmoselementares arrays desafios entrevista" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Checagem de Elementos Duplicados</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">76%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-check-circle"></i> Acertou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Desafios, Entrevista</div>
                     </li>
-                    <li data-tags="tree" data-difficulty="facil">
-                        <div class="question-title">Questão 3</div>
-                        <div class="question-tags">Tags: Tree</div>
+                    
+                    <li data-tags="algoritmoselementares desafios entrevista" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">3N + 1</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">68%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Desafios, Entrevista</div>
                     </li>
-                    <li data-tags="linkedlist" data-difficulty="facil">
-                        <div class="question-title">Questão 4</div>
-                        <div class="question-tags">Tags: Linked List</div>
+                    
+                    <li data-tags="algoritmoselementares" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Frequência Elemento</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Posições Elemento</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays desafios" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Troca Vizinhos</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Desafios</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays recursividade busca" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Busca Linear Recursiva</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Recursividade, Busca</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays recursividade" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Encontra Primeiro Negativo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Recursividade</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares desafios entrevista" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Sem Par</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Desafios, Entrevista</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays desafios entrevista" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Vetor Circular</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Desafios, Entrevista</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Move Impostor</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Move Três</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Ordenação</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Encontra Elemento</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Move N</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Ordenação</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Top N</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Ordenação</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Down N</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Ordenação</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares recursividade" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Fibonacci</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Recursividade</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays busca" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Busca Binária</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Busca</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares arrays recursividade" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Encontra Quebra Recursivo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Recursividade</div>
+                    </li>
+
+                    <li data-tags="arrays desafios entrevista" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Elemento Sobrando</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Desafios, Entrevista</div>
+                    </li>
+
+                    <li data-tags="arrays pilha" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Element At Pilha</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Pilha</div>
+                    </li>
+                    
+                    <li data-tags="arrays pilha" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Max Pilha Index</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Pilha</div>
+                    </li>
+
+                    <li data-tags="arrays pilha" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Expressão</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Pilha</div>
+                    </li> 
+                    
+                    <li data-tags="arrays desafios entrevista" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Dois Somam</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Desafios, Entrevista</div>
+                    </li>   
+
+                    <li data-tags="arrays ordenacao linear" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Radix Dois Dígitos</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Ordenação, Linear</div>
+                    </li>   
+
+                    <li data-tags="arrays fila" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Fila Array</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Fila</div>
+                    </li>   
+
+                    <li data-tags="arrays pilha" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Pilha com Array</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Pilha</div>
+                    </li>   
+
+                    <li data-tags="arrays ordenacao linear" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Radix Sort</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Ordenação, Linear</div>
+                    </li>   
+
+                    <li data-tags="arrays pilha" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Max Pilha</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Pilha</div>
+                    </li>   
+
+                    <li data-tags="arrays ordenacao pivot" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Estatística de Ordem</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Ordenação, Pivot</div>
+                    </li>   
+
+                    <li data-tags="arrays ordenacao linear" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Radix Três Dígitos</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Ordenação, Linear</div>
+                    </li>  
+                    
+                    <li data-tags="arrays fila" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Fura Fila</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Fila</div>
+                    </li>   
+
+                    <li data-tags="arrays arvores heap" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Build Heap</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Árvores, Heap</div>
+                    </li>   
+
+                    <li data-tags="algoritmoselementares arrays recursividade busca" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Busca Binária Recursiva</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Arrays, Busca, Recursividade</div>
+                    </li>   
+
+                    <li data-tags="arrays arvores heap" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Heap?</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Árvores, Heap</div>
+                    </li>   
+
+                    <li data-tags="desafios linkedlist" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Troca Vizinhos LinkedList</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios, LinkedList</div>
+                    </li>   
+
+                    <li data-tags="desafios" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Stop Words</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios</div>
+                    </li> 
+
+                    <li data-tags="desafios entrevista pilha string" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Inverte Frase</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios, Entrevista, Pilha, String</div>
+                    </li> 
+
+                    <li data-tags="desafios entrevista hash" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Word Cloud</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios, Entrevista, Hash</div>
+                    </li> 
+
+                    <li data-tags="desafios linkedlist" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Remove Index LinkedList</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios, LinkedList</div>
+                    </li> 
+
+                    <li data-tags="desafios entrevista ordenacao linear" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Tabela de Frequência</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios, Entrevista, Ordenação, Linear</div>
+                    </li> 
+ 
+                    <li data-tags="desafios arrays" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Inverte Array</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Arrays, Desafios</div>
+                    </li> 
+
+                    <li data-tags="desafios entrevista grafos hash" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Matriz de Adjacência</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Desafios, Entrevista, Grafos, Hash</div>
+                    </li> 
+
+                    <li data-tags="ordenacao pivot particionamento lomuto" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Particionamento Lomuto Último</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Pivot, Particionamento, Lomuto</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Stooge Sort</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Bubble</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Counting</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Insere Primeiro</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Counting Negativos</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao pivot" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Melhor Pivot</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Pivot</div>
+                    </li> 
+
+                    <li data-tags="ordenacao pivot particionamento lomuto" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Particiona Lomuto</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Pivot, Particionamento, Lomuto</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Quick Sort</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Insere Último</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao pivot" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Particiona Estável</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Pivot</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">MergeSort Passo a Passo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao recursividade" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">InsertionSort Recursivo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Recursividade</div>
+                    </li> 
+
+                    <li data-tags="ordenacao pivot" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Particionamento Hoare</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Pivot</div>
+                    </li> 
+
+                    <li data-tags="ordenacao recursividade" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">SelectionSort Recursivo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Recursividade</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Ordenação de Placas</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao pilha" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Ordena Pilha Invertendo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação, Pilha</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Mariana e os Livros</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="ordenacao" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">SelectionSort Passo a Passo</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Ordenação</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Valor Mais Próximo BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Predecessor BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst bfs largura" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">BFS Direita</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST, BFS, Encaminhamento em Largura</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst avl" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Rotações</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST, AVL</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst bfs largura" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">BFS</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST, BFS, Encaminhamento em Largura</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Elementos Maiores BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst preordem emordem posordem" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Encaminhamento em BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST, Pré-Ordem, Em-Ordem, Pós-Ordem</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Max BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Elementos Menores BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Conta Folhas BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Conta Nós Internos BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Soma Folhas</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Sucessor BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst busca" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Busca BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST, Busca</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Equals BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Min BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Balance</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Altura BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="arvbin bst" data-difficulty="facil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Remoção BST</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores Binárias, BST</div>
+                    </li> 
+
+                    <li data-tags="bst arvores grafos bfs" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Altura de uma Árvore</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: BST, Árvores, Grafos, BFS</div>
+                    </li> 
+
+                    <li data-tags="arvores bfs dfs" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Árvores Similares</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores, BFS, DFS</div>
+                    </li> 
+
+                    <li data-tags="arvores grafos" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">É Árvore?</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Árvores, Grafos</div>
+                    </li> 
+
+                    <li data-tags="grafos" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Lista de Adjacência</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Grafos</div>
+                    </li>
+
+                    <li data-tags="pilha" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Inverte Pilha sem Fila</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Pilha</div>
+                    </li>
+
+                    <li data-tags="pilha" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Inverte Pilha</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Pilha</div>
+                    </li>
+
+                    <li data-tags="pilha" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Inverte Pilha Index</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Pilha</div>
+                    </li>
+
+                    <li data-tags="pilha" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Torre de Hanoi</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Pilha</div>
+                    </li>
+
+                    <li data-tags="pilha" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Notação Polonesa Reversa</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Pilha</div>
+                    </li>
+
+                    <li data-tags="pilha" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Parênteses</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Pilha</div>
+                    </li>
+
+                    <li data-tags="linkedlist" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Filtra LinkedList</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: LinkedList</div>
+                    </li>
+
+                    <li data-tags="linkedlist" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Trim LinkedList</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: LinkedList</div>
+                    </li>
+
+                    <li data-tags="hash" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">HT Chaining</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Hash</div>
+                    </li>
+
+                    <li data-tags="hash" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">HashSet</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Hash</div>
+                    </li>
+
+                    <li data-tags="hash" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">HT Probing Linear</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Hash</div>
+                    </li>
+
+                    <li data-tags="algoritmoselementares recursividade" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Potência Recursiva</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Algoritmos Elementares, Recursividade</div>
+                    </li>
+
+                    <li data-tags="teoria" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Teorema Mestre</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Teoria</div>
+                    </li>
+
+                    <li data-tags="fila linkedlist" data-difficulty="dificil">
+                        <div class="question-title">
+                            <a href="../login/index.html">Fila (LinkedList)</a>
+                        </div>
+                        <div class="question-info">
+                            <span class="acceptance-rate"><i class="fas fa-chart-line"></i> Aceitação:&nbsp;<span class="highlight">80%</span></span>
+                            <span class="difficulty"><i class="fas fa-tachometer-alt"></i> Dificuldade:&nbsp;<span class="highlight">Fácil</span></span>
+                            <span class="status"><i class="fas fa-times-circle"></i> Errou</span>
+                        </div>
+                        <div class="question-tags">Tags: Fila, LinkedList</div>
                     </li>
                 </ul>
             </section>
