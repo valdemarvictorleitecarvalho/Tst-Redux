@@ -180,3 +180,31 @@ button, a, li {
 .status i.fa-times-circle {
     color: #e74c3c; 
 }
+
+#back-top-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #011e49;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 30px;  
+    right: 15px;
+    transition: background-color 0.3s, opacity 0.5s ease, visibility 0.5s ease;;
+    opacity: 0;
+    visibility: hidden; 
+    z-index: 1000;
+}   
+
+#back-top-button i {
+    font-size: 32px;
+    color: whitesmoke;
+    text-shadow: #20212a;
+}
+
+#back-top-button.show {
+    opacity: 1;
+    visibility: visible;
+}

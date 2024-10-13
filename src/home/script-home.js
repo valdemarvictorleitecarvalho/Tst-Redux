@@ -20,3 +20,16 @@ function filterQuestions() {
         }
     });
 }
+
+window.onscroll = function() {
+    const button = document.getElementById('back-top-button');
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.classList.add('show');
+    } else {
+        button.classList.remove('show');
+    }
+};
+
+document.getElementById('back-top-button').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
