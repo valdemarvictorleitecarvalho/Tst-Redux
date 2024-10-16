@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="warm-up.css">
+    <link rel="shortcut icon" href="../assets/images/logo-uasc-render.ico" type="image/x-icon">
+    <title>Warm Up | TST Redux</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../../home/home.html">
+                <img class="logo" src="../../assets/images/logo-uasc-render.ico" alt="logo">
+            </a>
+            <span class="logo-text">TST Redux</span>
+        </div>
+        <nav>
+            <ul class="links_nav">
+                <li><a href="#">Instruções</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="../../login/index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="left-container" id="left-container">
+        <h1>Warm Up</h1>
+        
+        <span id="texto-geral">Escreva um programa que leia um número inteiro N e uma sequência de inteiros e multiplique cada elemento dessa sequência por N.</span>
+        
+        <h2>Entrada</h2>
+        <span id="texto-entrada">Seu programa deve ler duas linhas. Na primeira linha, deve ler um inteiro N. Na segunda, uma sequência de inteiros separados por espaço.</span>
+
+        <h2>Saída</h2>
+        <span id="texto-saida">Seu programa deve imprimir na saída a sequência de inteiros resultante da multiplicação entre N e cada elemento da sequência original.</span>
+
+        <h3>Exemplo 1:</h3>
+        <p><span class="label">Input:</span></p>
+        <p class="code" id="input-exemplo-1">2<br>2 4 6
+            <button class="copy-button" onclick="copyToClipboard('input-exemplo-1')">
+                <i class="fas fa-copy"></i> 
+            </button>
+        </p>
+        
+        <p><span class="label">Output:</span></p>
+        <p class="code" id="output-exemplo-1">4 8 12
+            <button class="copy-button" onclick="copyToClipboard('output-exemplo-1')">
+                <i class="fas fa-copy"></i> 
+            </button>
+        </p>
+
+        <h3>Exemplo 2:</h3>
+        <p><span class="label">Input:</span></p>
+        <p class="code" id="input-exemplo-2">3<br>1 2 3
+            <button class="copy-button" onclick="copyToClipboard('input-exemplo-2')">
+                <i class="fas fa-copy"></i> 
+            </button>
+        </p>
+        
+        <p><span class="label">Output:</span></p>
+        <p class="code" id="output-exemplo-2">3 6 9
+            <button class="copy-button" onclick="copyToClipboard('output-exemplo-2')">
+                <i class="fas fa-copy"></i> 
+            </button>
+        </p>
+    </div>
+
+    <script src="copy-question.js"></script>
+</body>
+
+</html>

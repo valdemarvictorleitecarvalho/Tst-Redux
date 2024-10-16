@@ -60,6 +60,12 @@ button, a, li {
     align-items: center;
 }
 
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .logo {
     cursor: pointer;
     width: 70px;
